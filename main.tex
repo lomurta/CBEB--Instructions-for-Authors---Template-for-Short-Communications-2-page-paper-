@@ -1,88 +1,79 @@
 \documentclass[nouppercase]{ifmbe}
 
 
-\title{Tutorial Maker: an easy way to produce teaching material for 3D Slicer to promote open imaging science.}
+\title{Preliminary Results of 3D Slicer localization to Portuguese and Spanish for the Latin American Biomedical Engineering Community}
 
-\affiliation{Institution/Department, Affiliation, City, Country }{FIRSTAFF}
-\affiliation{Institution/Department, Affiliation, City, Country }{SECONDAFF}
+\affiliation{Brigham and Women’s Hospital, Harvard Medical School, Boston, MA, USA }{HMS}
+\affiliation{Department of Computing and Mathematics, University of São Paulo, Ribeirão Preto, Brazil}{USP}
+\affiliation{Universidad Autónoma del Estado de México, Toluca, México}{UAEMEX}
+\affiliation{Queen’s University, Kingston, ON, Canada}{QU}
+\affiliation{Isomics Inc., Cambridge, MA, USA}{ISO}
 
-\author{A.B. Firstauthor}{FIRSTAFF}
-\author{C. Coauthor}{SECONDAFF}
-\author{D.E. Othercoauthor}{FIRSTAFF}
+
+\author{Sonia Pujol}{HMS}
+\author{Paulo Eduardo de Barros}{USP}
+\author{Valeria Gómez-Valdes}{UAEMEX}
+\author{Lucas Sanchez Silva}{USP}
+\author{Douglas Gonçalves}{USP}
+\author{João Pedro Alves Januário}{USP}
+\author{Victor M. Montãno Serrano}{UAEMEX}
+\author{Enrique Hernandez-Laredo}{UAEMEX}
+\author{Monserrat Ríos-Hernández}{UAEMEX}
+\author{Andras Lasso}{QU}
+\author{Steve Pieper}{ISO}
+\author{Ron Kikinis}{HMS}
+\author{Adriana Vilchis González}{UAEMEX}
+\author{Luiz Otavio Murta Junior}{USP}
+
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-3D Slicer is an open-source software designed for visualization, processing, segmentation, registration, and analysis of medical, biomedical, and other 3D images and meshes. It also facilitates planning and navigating image-guided procedures. Tutorial Maker is a semi-automated tool that assists in creating educational content on 3D Slicer, specifically tutorials. It simplifies the process of producing teaching material, making it easier for radiology instructors, experienced users, and developers to share knowledge and guide others through various 3D Slicer functionalities. Whether it is creating step-by-step instructions, video demonstrations, or interactive guides, a tutorial maker streamlines the creation process and promotes effective learning.
+3D Slicer is an open source software platform for medical image analysis and image-guided intervention used in medical research around the world. However, until recently, the platform was available in the English language only. This paper presents our work on localizing 3D Slicer to Portuguese and Spanish to facilitate access to the platform to the Latin American biomedical research community. We used the 3D Slicer Weblate repository and the 3D Slicer Language Packs Extension to translate the user interface and glossary of the platform. 
 \end{abstract}
 
 \begin{keywords}
-This section should contain a maximum of 5 words separated by a semicolon (e.g., cardiac death; ECG; ionic channels; arrhythmias).
+3D Slicer; Software Localization; Medical Image Computing
 \end{keywords}
 
 \section{Introduction}
 
-This document is formatted so that you may use this as a template for your manuscript. Divide the manuscript according to the standard scientific practise with main headings into main sections: Introduction, Materials and Methods, Results and discussion, Conclusions, Acknowledgments, and References as presented in this document. 
-The short communication can be prepared in MS Word and submitted as a *.pdf file. The templates can be downloaded from the CBEB website: www.cbeb.org.br.
+Open source software provides essential resources to the biomedical research community for advancing health. With over 20 years of development, 3D Slicer stands as a robust platform for medical image analysis and image-guided intervention \cite{SLICER}. We introduced the platform and examples of clinical research applications developed using the software to the Latin American biomedical research community during a workshop at the joint IX Latin American Congress on Biomedical Engineering (CLAIB 2022) and the XXVIII Brazilian Congress on Biomedical Engineering (CBEB 2022) \cite{CLAIB-CBEB-2022}. 
 
+However, 3D Slicer was initially developed in English, potentially limiting accessibility for researchers in non-English speaking countries. In order to facilitate access to the platform for biomedical researchers in Latin America, we have engaged in a localization effort to translate the user interface and documentation to Portuguese and Spanish. The paper presents our preliminary work on the localization of the 3D Slicer for Latin America. 
 
 \section{Materials and Methods}
 
-\subsection{Figures and Tables}
+We used the web-based 3D Slicer Weblate translation repository and the 3D Slicer Language Packs extension to localize the user interface elements of 3D Slicer to Brazilian Portuguese and Latin American Spanish \cite{LANGUAGEPACK, WEBLATE}. Additionally, to provide a reference to end-users unfamiliar with 3D Slicer terminology, we translated the 3D Slicer glossary of medical image computing terms \cite{GLOSSARY}. Furthermore, we translated the documentation of the 3D Slicer Language Packs extension into both languages to facilitate access to the localized version of the software for the Latin American biomedical research community, enabling their contribution to future translation.
 
-Figures may span the whole page width (see Figure~\ref{fig:fig1}) or use only a part of it with the text flowing on the left-hand side. Figures should be placed within the manuscript in the appropriate locations. Captions appear below figures but above tables, as in Figure~\ref{fig:fig1} and Table~\ref{tab:tab1}.
+\section{Results and Discussion}
 
-\textit{{Third level headings}}
-If needed, the subsections may be divided into third-level sections with third-level headings to clarify the work description. Do not number the third-level headings.
+The translation of the 3D Slicer user interface to Portuguese and Spanish encompasses over 5,300 strings in each language. Figures \ref{fig:portuguese} and \ref{fig:spanish} showcase the Volumes module of 3D Slicer translated into Portuguese and Spanish, respectively. We translated the documentation for the Slicer Language Packs extension and the 3D Slicer glossary and made them available on GitHub \cite{PORTUGUESE-GLOSSARY, SPANISH-GLOSSARY}. The initial project outcomes were presented at the 39th edition of the Slicer Project Week hackathon, a bi-annual event that brings where we received valuable feedback from the 3D Slicer community \cite{SLICER-FOR-LA-PW39}.
 
 \begin{figure}[ht]
       \centering
-          \includegraphics[width=1\columnwidth]{figures/logo sbeb.png}
-      \caption{Figure legends should contain enough information to understand the illustration without referring to the text but should be concise. The reader should get a reasonable understanding of the article by only looking at the figures and reading their legends.}
-      \label{fig:fig1}
+          \includegraphics[width=1\columnwidth]{figures/3DSlicer_Portuguese.png}
+      \caption{Volumes module of 3D Slicer translated to Portuguese, where one can see both the core 3D Slicer and the module graphical user interface in Portuguese.}
+      \label{fig:portuguese}
 \end{figure}
 
-\begin{table}[bt]
-\centering
-\caption{This table is placed after the Section Break at the end of text.}
-\label{tab:tab1}
-\begin{tabular}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
-\hline
- &  &  & \\\hline
- &  &  & \\\hline
- &  &  & \\\hline
- &  &  & \\\hline
- &  &  & \\\hline
- &  &  & \\\hline
- % Please only put a hline at the end of the table
-\end{tabular}
-\end{table}
-
-\subsection{Equations:} Number equations consecutively with the number placed in parenthesis to the extreme right on the Equation’s line. Refer to equations as Equation~(\ref{Equation:eq1}). At the beginning of a sentence, the word Equation should be spelt out. In the mathematical equations, all symbols used and their dimensions should be defined. As an example, the following Equation is given: (The Equation is written with the Equation tools)
-
-\begin{equation}\label{Equation:eq1}
-E = mc^2
-\end{equation}
-
-where
-E = energy of the particle at rest [J],
-m = mass of the particle [kg],
-c = speed of light [m/s].
-
-\subsection{References:} References should be sorted alphabetically according to the first author. If the first author appears more than once, these references shall be placed in chronological order. 
-The reference formats for a journal article, a book and conference proceedings are illustrated in the References section such as~\cite{IFMBE}, \cite{smith99}, \cite{lock03}, \cite{south01}. The format is compact and does not include titles for articles. 
-
-\section{Results and Discussion}
-This paper makes many important points.
+\begin{figure}[ht]
+      \centering
+          \includegraphics[width=1\columnwidth]{figures/3DSlicer_Spanish.png}
+      \caption{Volumes module of 3D Slicer translated to Spanish, where one can see both the core 3D Slicer and the module graphical user interface in Spanish.}
+      \label{fig:spanish}
+\end{figure}
 
 \section{Conclusions}
-The conclusions are stated in this section, and they should be concise.
+
+We have created the first localized version of 3D Slicer in Portuguese and Spanish for Latin America. This initiative enables researchers across the region to fully utilize the platform. Future plans include maintaining these translations and expanding them to encompass additional modules and resources, fostering a more inclusive and collaborative research environment for the Latin American biomedical engineering community.
 
 \section*{Acknowledgements}
-The authors would like to express their gratitude to…
 
-\bibliography{example}
-(3 to 5 Refs recommended)
+This project has been made possible in part by grants number 2021-237549 and 2022-252572 from the Chan Zuckerberg Initiative DAF, an advised fund of the Silicon Valley Community Foundation.
+
+\bibliography{CBEB}
+
 \end{document}
